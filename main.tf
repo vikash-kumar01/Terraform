@@ -1,3 +1,8 @@
+#Configure the Microsoft Azure Provider
+ provider "azurerm" {
+   version = "=1.44.0"
+}
+
 # Create a resource group if it doesn’t exist
 resource "azurerm_resource_group" "tf_azure_test" {
   name     = var.resource_group
